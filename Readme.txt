@@ -1,9 +1,5 @@
 ﻿README
 
-Name : Vaibhav Patel
-ASU ID :1208649516
-Phone : 480-646-2791
-
 Main File to run : serveletExample2.java
 
 Code Run Instructions : run serveletExample2.java using tomcat server(version used is 7). 
