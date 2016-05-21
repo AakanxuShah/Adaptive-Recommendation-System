@@ -1,6 +1,22 @@
-﻿README
+# About the Project : 
+# ( Content-based ) Recommendation
 
-Main File to run : serveletExample2.java
+![screen shot 2016-05-20 at 6 35 45 pm](https://cloud.githubusercontent.com/assets/8707780/15445716/cb6eb794-1eb9-11e6-9245-e824756d4f53.png)
+
+
+## Tasks: 
+In this project, I have implement a content based recommender via an web app by recommending
+similarity based Java programming wiki-books content ( https://en.wikibooks.org/wiki/Java_Programming ) to Stackoverflow.com data set (10 posts).
+
+To do this: 
+- First, crawled java programming wikibooks pages (crawlingSoup.java) 
+-  Used Apache Lucene (SOLR  or any Lucene compatibles to index crawled content ) 
+-  built a simple web app to display the provided StackOverflow 10 posts, by selecting each post,
+-  listed recommendations -  the top 10 relevant wikibooks items (from your indexed documents).
+
+# README
+
+### Main File to run : serveletExample2.java
 
 Code Run Instructions : run serveletExample2.java using tomcat server(version used is 7). 
 
@@ -29,5 +45,4 @@ Java files and their functions
 
 
 Error Handling
-1) As crwaling is done on init() function of srvelet, if sometimes directory is not found than please restrat the server and run again.
- 
+1) As crawling is done on init() function of servlet, if sometimes directory is not found than please restart the server and run again.
