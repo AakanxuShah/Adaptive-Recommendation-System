@@ -18,15 +18,15 @@ function select_value(obj){
 	
 	if(obj.value == "1"){
 		
-		document.getElementById('out').innerHTML = "One way to implement deep copy is to add copy constructors to each associated class. A copy constructor takes an instance of 'this' as its single argument and copies all the values from it. Quite some work, but pretty straightforward and safe. EDIT: note that you don't need to use accessor methods to read fields. You can access all fields directly because the source instance is always of the same type as the instance with the copy constructor. Obvious but might be overlooked. Example: Edit: Note that when using copy constructors you need to know the runtime type of the object you are copying. With the above approach you cannot easily copy a mixed list (you might be able to do it with some reflection code).";
+		document.getElementById('out').innerHTML = "One way to implement deep copy is to add copy constructors to each associated class. A copy constructor takes an instance of 'this' as its single argument and copies all.EDIT: note that you don't need to use accessor methods to read fields. You can access all fields directly because the source instance is always of the same type as the instance with the copy constructor. Obvious but might be overlooked.";
 	}else if(obj.value == "2"){
 		
-		document.getElementById('out').innerHTML = "I was presented with this question in an end of module open book exam today and found myself lost. i was reading Head first Javaand both definitions seemed to be exactly the same. i was just wondering what the MAIN difference was for my own piece of mind. i know there are a number of similar questions to this but, none i have seen which provide a definitive answer.Thanks, Darren";	
+		document.getElementById('out').innerHTML = "I was presented with this question in an end of module open book exam today and found myself lost. i was reading Head first Javaand both definitions seemed to be exactly the same. ";	
 	}else if(obj.value == "3"){
 		
-		document.getElementById('out').innerHTML = "Inheritance is when a 'class' derives from an existing 'class'.So if you have a Person class, then you have a Student class that extends Person, Student inherits all the things that Person has.There are some details around the access modifiers you put on the fields/methods in Person, but that's the basic idea.For example, if you have a private field on Person, Student won't see it because its private, and private fields are not visible to subclasses.Polymorphism deals with how the program decides which methods it should use, depending on what type of thing it has.If you have a Person, which has a read method, and you have a Student which extends Person, which has its own implementation of read, which method gets called is determined for you by the runtime, depending if you have a Person or a Student.It gets a bit tricky, but if you do something likePerson p = new Student();p.read();the read method on Student gets called.Thats the polymorphism in action.You can do that assignment because a Student is a Person, but the runtime is smart enough to know that the actual type of p is Student.Note that details differ among languages.You can do inheritance in javascript for example, but its completely different than the way it works in Java.";
+		document.getElementById('out').innerHTML = "Inheritance is when a 'class' derives from an existing 'class'.So if you have a Person class, then you have a Student class that extends Person, Student inherits all the things that Person has.There are some details around the access modifiers you put on the fields/methods in Person, but that's the basic idea.For example, if you have a private field on Person, Student won't see it because its private.";
 	}else if(obj.value == "4"){
-		document.getElementById('out').innerHTML = "Polymorphism: The ability to treat objects of different types in a similar manner.Example: Giraffe and Crocodile are both Animals, and animals can Move.If you have an instance of an Animal then you can call Move without knowing or caring what type of animal it is.Inheritance: This is one way of achieving both Polymorphism and code reuse at the same time.Other forms of polymorphism:There are other way of achieving polymorphism, such as interfaces, which provide only polymorphism but no code reuse (sometimes the code is quite different, such as Move for a Snake would be quite different from Move for a Dog, in which case an Interface would be the better polymorphic choice in this case.In other dynamic languages polymorphism can be achieved with Duck Typing, which is the classes don't even need to share the same base class or interface, they just need a method with the same name.Or even more dynamic like Javascript, you don't even need classes at all, just an object with the same method name can be used polymorphically.";
+		document.getElementById('out').innerHTML = "Polymorphism: The ability to treat objects of different types in a similar manner.Example: Giraffe and Crocodile are both Animals, and animals can Move.If you have an instance of an Animal then you can call Move without knowing or caring what type of animal it is.Inheritance: This is one way of achieving both Polymorphism and code reuse at the same time.Other forms of polymorphism:There are other way of achieving polymorphism, such as interfaces, which provide only polymorphism hoice in this case. ";
 	}else if(obj.value == "5"){
 		document.getElementById('out').innerHTML = "I found out that the above piece of code is perfectly legal in Java. I have the following questions. ThanksAdded one more question regarding Abstract method classes.";
 	}else if(obj.value == "6"){
@@ -36,7 +36,7 @@ function select_value(obj){
 	}else if(obj.value == "8"){
 		document.getElementById('out').innerHTML = "Java has the ability to create classes at runtime. These classes are known as Synthetic Classes or Dynamic Proxies. See for more information. Other open-source libraries, such as and also allow you to generate synthetic classes, and are more powerful than the libraries provided with the JRE. Synthetic classes are used by AOP (Aspect Oriented Programming) libraries such as Spring AOP and AspectJ, as well as ORM libraries such as Hibernate. ";
 	}else if(obj.value == "9"){
-		document.getElementById('out').innerHTML = "In short: the web server issues a unique identifier to on his visit. The visitor must bring back that ID for him to be recognised next time around. This identifier also allows the server to properly segregate objects owned by one session against that of another. If is: If is: Once he's on the service mode and on the groove, the servlet will work on the requests from all other clients.Why isn't it a good idea to have one instance per client? Think about this: Will you hire one pizza guy for every order that came? Do that and you'd be out of business in no time. It comes with a small risk though. Remember: this single guy holds all the order information in his pocket: so if you're not cautious about, he may end up giving the wrong order to a certain client.";
+		document.getElementById('out').innerHTML = "In short: the web server issues a unique identifier to on his visit. The visitor must bring back that ID for him to be recognised next time around. This identifier also allows the server to properly segregate objects owned by one session against that of another. If is: If is: Once he's on the service mode and on the groove, the servlet will work on the requests from all other clients.Why isn't it a good idea to have one instance per client?";
 	}else if(obj.value == "10"){
 		document.getElementById('out').innerHTML = "A safe way is to serialize the object, then deserialize.This ensures everything is a brand new reference.about how to do this efficiently. Caveats: It's possible for classes to override serialization such that new instances are created, e.g. for singletons.Also this of course doesn't work if your classes aren't Serializable.";
 	}else{}
@@ -46,118 +46,113 @@ function select_value(obj){
 </script>
 </head>
 <body>
+
+<p style = "align:center; text-align:center;background-color:#5f9ea0;font-size:25">Recommendations using Crawling and Lucene Indexing</p>
+
 <div style="height:250px">
-<div style="align:center;text-align:center;background-color:yellow">
+<div style="align:center;text-align:center;background-color:#5f9ea0">
+
+
 <form action="ServletPath" >
-<input type="radio" name="text_display" value="1" onClick="select_value(this)" checked> Instance 1  <a href="/servelet1/serveletExample2?id=0">click here</a>
-<input type="radio" name="text_display" value="2" onClick="select_value(this)">  Instance 2 <a href="/servelet1/serveletExample2?id=1">click here</a>
-<input type="radio" name="text_display" value="3" onClick="select_value(this)">  Instance 3 <a href="/servelet1/serveletExample2?id=2">click here</a>
-<input type="radio" name="text_display" value="4" onClick="select_value(this)">  Instance 4 <a href="/servelet1/serveletExample2?id=3">click here</a>
-<input type="radio" name="text_display" value="5" onClick="select_value(this)">  Instance 5 <a href="/servelet1/serveletExample2?id=4">click here</a><br/>
-<input type="radio" name="text_display" value="6" onClick="select_value(this)">  Instance 6 <a href="/servelet1/serveletExample2?id=5">click here</a>
-<input type="radio" name="text_display" value="7" onClick="select_value(this)">  Instance 7 <a href="/servelet1/serveletExample2?id=6">click here</a>
-<input type="radio" name="text_display" value="8" onClick="select_value(this)">  Instance 8 <a href="/servelet1/serveletExample2?id=7">click here</a>
-<input type="radio" name="text_display" value="9" onClick="select_value(this)">  Instance 9 <a href="/servelet1/serveletExample2?id=8">click here</a>
-<input type="radio" name="text_display" value="10" onClick="select_value(this)" >  Instance 10 <a href="/servelet1/serveletExample2?id=9">click here</a><br>
+<input type="radio" name="text_display" value="1" onClick="select_value(this)" checked> Question 1  <a href="/servelet1/serveletExample2?id=0">click here</a><br/>
+<input type="radio" name="text_display" value="2" onClick="select_value(this)">  Question 2 <a href="/servelet1/serveletExample2?id=1">click here</a>
+<input type="radio" name="text_display" value="3" onClick="select_value(this)">  Question 3 <a href="/servelet1/serveletExample2?id=2">click here</a><br/>
+<input type="radio" name="text_display" value="4" onClick="select_value(this)">  Question 4 <a href="/servelet1/serveletExample2?id=3">click here</a>
+<input type="radio" name="text_display" value="5" onClick="select_value(this)">  Question 5 <a href="/servelet1/serveletExample2?id=4">click here</a><br/>
+<input type="radio" name="text_display" value="6" onClick="select_value(this)">  Question 6 <a href="/servelet1/serveletExample2?id=5">click here</a>
+<input type="radio" name="text_display" value="7" onClick="select_value(this)">  Question 7 <a href="/servelet1/serveletExample2?id=6">click here</a><br/>
+<input type="radio" name="text_display" value="8" onClick="select_value(this)">  Question 8 <a href="/servelet1/serveletExample2?id=7">click here</a>
+<input type="radio" name="text_display" value="9" onClick="select_value(this)">  Question 9 <a href="/servelet1/serveletExample2?id=8">click here</a><br/>
+<input type="radio" name="text_display" value="10" onClick="select_value(this)" >  Question 10 <a href="/servelet1/serveletExample2?id=9">click here</a><br>
 
 </form>
 </div>
 
 
-<div style="align:center;text-align:center;background-color:cyan">
+<div style="align:center;text-align:center;background-color:#f0f8ff">
 <p id="out"></p>
 
 </div>
 </div>
+
+<div> 
+<p>  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>  </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> _______________________________________________________________________________________________________________________________________________________</p>
+</div>
  
   <div class="row">
+  
       <div class="large-12 columns">
+      
         	<ul class="accordion" data-accordion>
+        	
   <li class="accordion-navigation">
-    <a href="#panel1a">Match 1</a>
-    <div id="panel1a" class="content active">
-      <iframe src="${message1}" style="height:200px;width:100%"></iframe>
-    </div>
+  
+    <a href="${message1}">Recommendation 1</a>
+    ${message1}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel2a">Match 2</a>
-    <div id="panel2a" class="content">
-     <iframe src="${message2}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel2a">Recommendation 2</a>
+    ${message2}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel3a">Match 3</a>
-    <div id="panel3a" class="content">
-      <iframe src="${message3}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel3a">Recommendation 3</a>
+    ${message3}
   </li>
     <li class="accordion-navigation">
-    <a href="#panel4a">Match 4</a>
-    <div id="panel4a" class="content active">
-      <iframe src="${message4}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel4a">Recommendation 4</a>
+    ${message4}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel5a">Match 5</a>
-    <div id="panel5a" class="content">
-     <iframe src="${message5}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel5a">Recommendation 5</a>
+    ${message5}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel6a">Match 6</a>
-    <div id="panel6a" class="content">
-      <iframe src="${message6}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel6a">Recommendation 6</a>
+   ${message6}
   </li>
     <li class="accordion-navigation">
-    <a href="#panel7a">Match 7</a>
-    <div id="panel7a" class="content active">
-      <iframe src="${message7}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel7a">Recommendation 7</a>
+    ${message7}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel8a">Match 8</a>
-    <div id="panel8a" class="content">
-      <iframe src="${message8}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel8a">Recommendation 8</a>
+    ${message8}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel9a">Match 9</a>
-    <div id="panel9a" class="content">
-      <iframe src="${message9}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel9a">Recommendation 9</a>
+    ${message9}
   </li>
   <li class="accordion-navigation">
-    <a href="#panel10a">Match 10</a>
-    <div id="panel10a" class="content">
-      <iframe src="${message10}" style="height:200px;width:100%"></iframe>
-    </div>
+    <a href="#panel10a">Recommendation 10</a>
+    ${message10}
   </li>
 </ul>
       </div>
       
-    <div>
-    <p>Lucene version used is 4.8.0</p>
-    <p>Java files and their functions
-1) crawlingSoup.java - Used to crawl data from website given and 3 types of folders are created. Jsoup is used to crwal the data.
-  - textfiles : which will store text files for every indexed page
-  - linknames : which stores links to file names
-  - htmlfiles : stores html code for files
-<br/>
-2) Keyword.java - This is file containing third party code which is used in indexing files
-<br/>
-3) SampleLuceneIndexing.java - This file contain indexing code which is combination of code provided by professor, third party code and self written code.
-<br/>
-4) ServeletExample2.java - This file contains servelet code which acts as binding place to call all other java files and dynamically calling index.jsp page
-<br/>
-5) index.jsp - This file uses foundation responsive framework to render collapsible panel functionality.
-    </p>
-    
-    <p>Techniques used for indexing. - > Indexes for webpages is created by using indexer given by professor.<br/>
-    Term frequency for input file keyword to match for stackoverflow problems is calculated with help of third party code where methods of lucene used in order are ClassicTokenizer,LowerCaseFilter,ClassicFilter,ASCIIFoldingFilter and StopFilter.
-    --> than top 10 frequency keywords are used used to compare with indexes of webpages to get top 10 pages with highest match. 
-    </p>
-    </div>
+
     </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
